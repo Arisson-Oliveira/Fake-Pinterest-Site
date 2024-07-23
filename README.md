@@ -35,5 +35,5 @@ FakePinterest é uma réplica simplificada do site Pinterest, desenvolvida utili
 1. **Clone o Repositório**:
 
 ```bash
-git clone https://github.com/seu-usuario/fakepinterest.git
-cd fakepinterest
+git clone https://github.com/seu-usuario/Fake-Pinterest-Site.git
+cd Fake-Pinterest-Site
