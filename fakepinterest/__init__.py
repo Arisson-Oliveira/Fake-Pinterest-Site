@@ -6,12 +6,13 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 # Importa a classe Bcrypt do módulo flask_bcrypt para hashing de senhas
 from flask_bcrypt import Bcrypt
+import os
 
 # Cria uma instância da aplicação Flask
 app = Flask(__name__)
 
 # Configura a URI do banco de dados SQLite para a aplicação
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///comunidade.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URL")
 # Define a chave secreta para a aplicação Flask, usada para segurança, como em sessões e CSRF
 app.config['SECRET_KEY'] = 'ajgdas7d65w67rwueftg7tf87t87'
 # Configura a pasta de upload para armazenar as fotos dos posts
